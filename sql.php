@@ -1,16 +1,21 @@
 <!--site html pour SQl injection du club de sécurité-->
 <!DOCTYPE html>
 <?php
+$config = parse_ini_file('config.ini');
+$dbusername = $config['username'];
+$dbpass = $config['password'];
+$dbname = $config['dbname'];
+$dbhost = $config['host'];
 $id = $_POST['id'];
 $password = $_POST['pass'];
 $query = "SELECT count(*) FROM login WHERE username='{$id}'and password='{$password}'";
-$db = new PDO('mysql:dbname=sqli1;host=127.0.0.1', 'Dinah', 'EmjlKgA13WBldHsTHP5L');
+$db = new PDO("mysql:dbname=$dbname;host=$dbhost", $dbusername, $dbpass);
 $result = $db->query($query);
 if(($result->fetch(PDO::FETCH_NUM))[0]==0) {
     echo'Mauvais mot passe!';
 }
 else{
-echo 'OK';
+echo '<script>alert("FLAG")</script>';
 }
  
 ?>

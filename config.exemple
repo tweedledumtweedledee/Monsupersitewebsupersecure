@@ -1,0 +1,7 @@
+[authentification]
+username = utilisateur
+password = motdepasse
+dbname = nombasededonnees
+host = localhost
+
+
