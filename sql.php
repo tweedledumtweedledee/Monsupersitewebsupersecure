@@ -1,4 +1,4 @@
-<!--https://github.com/tweedledumtweedledee/Monsupersitewebsupersecure.git-->
+<!-- Source : https://github.com/tweedledumtweedledee/Monsupersitewebsupersecure.git -->
 <!DOCTYPE html>
 <?php
 if (isset($_POST['id'])){
@@ -25,7 +25,7 @@ if (isset($_POST['id'])){
 			echo '<div class ="alert alert-danger"role="alert">Mauvais mot passe!</div>';
 		}
 		else{
-			header("Location:flag.html"); 
+			header("Location:XXXXXXXX"); 
 			exit; // <- don't forget this!
 		}
 	}
@@ -38,21 +38,40 @@ if (isset($_POST['id'])){
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+		
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<title>L'autre côté du miroir</title>
+
+		
+
+
+
 		</head>
 		<style>
 		form, body, p { text-align: center;}
+
+		body, html {
+			height: 75%;
+			margin:0;
+		}
+
+		.bg {
+		    background-image: url("alice.jpg");
+
+		    height: 75%;
+
+		    background-position: center;
+	            background-repeat: no-repeat;
+		    background-size: cover;
+		}
+		  
 	</style> 
 		<body >
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<div class="bg"></div>
 		<h1>Bienvenue de l'autre côté du miroir!</h1>
 		<p style="color:green;">L'autre côté du miroir vous donne accès a un monde fantastique qui dépasse les frontières de l'imagination!</p>
 
@@ -74,5 +93,3 @@ if (isset($_POST['id'])){
 		</p>
 		</form>
 		</body>
-
-		
